@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22024D9620AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22024D9520AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift */; };
+		2287C46120B18606007C945B /* vegeterianRecipiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */; };
 		22D54FC42095D522008CB31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FC32095D522008CB31E /* AppDelegate.swift */; };
 		22D54FC62095D522008CB31E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FC52095D522008CB31E /* ViewController.swift */; };
 		22D54FC92095D522008CB31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D54FC72095D522008CB31E /* Main.storyboard */; };
@@ -17,9 +19,12 @@
 		22D54FDC2099EC97008CB31E /* nationalAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDB2099EC97008CB31E /* nationalAnimalViewController.swift */; };
 		22D54FDE2099ECAD008CB31E /* nationalBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */; };
 		22D54FE0209C6D78008CB31E /* cultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDF209C6D77008CB31E /* cultureViewController.swift */; };
+		635906D420B19166006670E3 /* IndianRecipes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 635906D320B19166006670E3 /* IndianRecipes.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22024D9520AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalAnimalViewMoreInfoViewController.swift; path = "ViewController's/nationalAnimalViewMoreInfoViewController.swift"; sourceTree = "<group>"; };
+		2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vegeterianRecipiesViewController.swift; path = "ViewController's/vegeterianRecipiesViewController.swift"; sourceTree = "<group>"; };
 		22D54FC02095D522008CB31E /* Hindustan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hindustan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D54FC32095D522008CB31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22D54FC52095D522008CB31E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		22D54FDB2099EC97008CB31E /* nationalAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalAnimalViewController.swift; path = "ViewController's/nationalAnimalViewController.swift"; sourceTree = "<group>"; };
 		22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalBirdViewController.swift; path = "ViewController's/nationalBirdViewController.swift"; sourceTree = "<group>"; };
 		22D54FDF209C6D77008CB31E /* cultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = cultureViewController.swift; path = "ViewController's/cultureViewController.swift"; sourceTree = "<group>"; };
+		635906D320B19166006670E3 /* IndianRecipes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = IndianRecipes.pdf; path = ../../../Desktop/IndianRecipes.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +70,14 @@
 		22D54FC22095D522008CB31E /* Hindustan */ = {
 			isa = PBXGroup;
 			children = (
+				635906D320B19166006670E3 /* IndianRecipes.pdf */,
 				22D54FC32095D522008CB31E /* AppDelegate.swift */,
 				22D54FC52095D522008CB31E /* ViewController.swift */,
 				22D54FD72099C828008CB31E /* nationalEmblemViewController.swift */,
 				22D54FD92099D54B008CB31E /* nationalFlagViewController.swift */,
 				22D54FDB2099EC97008CB31E /* nationalAnimalViewController.swift */,
+				22024D9520AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift */,
+				2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */,
 				22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */,
 				22D54FDF209C6D77008CB31E /* cultureViewController.swift */,
 				22D54FC72095D522008CB31E /* Main.storyboard */,
@@ -111,7 +120,7 @@
 				TargetAttributes = {
 					22D54FBF2095D522008CB31E = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -141,6 +150,7 @@
 				22D54FCE2095D522008CB31E /* LaunchScreen.storyboard in Resources */,
 				22D54FCB2095D522008CB31E /* Assets.xcassets in Resources */,
 				22D54FC92095D522008CB31E /* Main.storyboard in Resources */,
+				635906D420B19166006670E3 /* IndianRecipes.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2287C46120B18606007C945B /* vegeterianRecipiesViewController.swift in Sources */,
 				22D54FDE2099ECAD008CB31E /* nationalBirdViewController.swift in Sources */,
 				22D54FDA2099D54B008CB31E /* nationalFlagViewController.swift in Sources */,
+				22024D9620AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift in Sources */,
 				22D54FDC2099EC97008CB31E /* nationalAnimalViewController.swift in Sources */,
 				22D54FE0209C6D78008CB31E /* cultureViewController.swift in Sources */,
 				22D54FC62095D522008CB31E /* ViewController.swift in Sources */,
@@ -294,11 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9C82H6HW5W;
 				INFOPLIST_FILE = Hindustan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Shubham.Hindustan;
+				PRODUCT_BUNDLE_IDENTIFIER = deakin.Hindustan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,11 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9C82H6HW5W;
 				INFOPLIST_FILE = Hindustan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Shubham.Hindustan;
+				PRODUCT_BUNDLE_IDENTIFIER = deakin.Hindustan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

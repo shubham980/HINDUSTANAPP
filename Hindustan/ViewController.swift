@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
-    let myArray: NSArray = ["TIRANGA - National Flag","About National Emblem","Know Our Culture","Our National Animal","Our National Bird", "Vegeterian Recipies", "Non-Vegeterian Recipies"]
+    let myArray: NSArray = ["TIRANGA - National Flag","About National Emblem","Know Our Culture","Our National Animal","Our National Bird", "Vegeterian Recipes", "Non-Vegeterian Recipes"]
     @IBOutlet private var myTableView: UITableView!
     
     override func viewDidLoad() {
@@ -45,6 +45,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
             let nationalBirdVC:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "nationalBirdViewController") as UIViewController
             
             self.present(nationalBirdVC, animated: true, completion: nil)
+        }
+        else if indexPath.row == 5 {
+            let vegeterianRecipiesVC:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vegeterianRecipiesVC") as UIViewController
+            
+            self.present(vegeterianRecipiesVC, animated: true, completion: nil)
         }
     }
     

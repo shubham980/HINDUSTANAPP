@@ -21,8 +21,14 @@ class nationalAnimalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     @IBAction func shakeButtonPressed(_ sender: UIButton) {
         sender.shake()
+        
+        let nationalAnimalViewMoreInfoVC:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "nationalAnimalViewMoreInfoViewController") as UIViewController
+        
+        self.present(nationalAnimalViewMoreInfoVC, animated: true, completion: nil)
     }
     
     @IBAction func backBtnTap(){

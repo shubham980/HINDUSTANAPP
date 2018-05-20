@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -160,6 +156,106 @@
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="272.11394302848578"/>
         </scene>
+        <!--nationalAnimalViewMoreInfoViewController-->
+        <scene sceneID="ogZ-nl-eOv">
+            <objects>
+                <viewController storyboardIdentifier="nationalAnimalViewMoreInfoViewController" title="nationalAnimalViewMoreInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7NB-G8-aff" customClass="nationalAnimalViewMoreInfoViewController" customModule="Hindustan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A9B-1A-rTN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="2500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5rq-xl-U4C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.2784313725" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="51p-Oj-kSt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlD-YI-hqm">
+                                <rect key="frame" x="15" y="18" width="21" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="GOZ-kP-mzT"/>
+                                    <constraint firstAttribute="height" constant="42" id="LUl-M2-pSk"/>
+                                </constraints>
+                                <state key="normal" image="head_back_btn"/>
+                                <connections>
+                                    <action selector="backBtnTap" destination="7NB-G8-aff" eventType="touchUpInside" id="9ur-DS-Ztm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NATIONAL ANIMAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce9-TQ-fTe">
+                                <rect key="frame" x="44" y="29" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IXH-fW-VCL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhQ-g0-FdL">
+                                <rect key="frame" x="0.0" y="78" width="320" height="2406"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="5000" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="333" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-fb-7zN">
+                                        <rect key="frame" x="8" y="8" width="304" height="2398"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2398" id="Us5-GT-CxE"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name=".SFNSText"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MRn-fb-7zN" firstAttribute="centerX" secondItem="uhQ-g0-FdL" secondAttribute="centerX" id="3II-qf-Luu"/>
+                                    <constraint firstItem="MRn-fb-7zN" firstAttribute="top" secondItem="uhQ-g0-FdL" secondAttribute="topMargin" id="6Pa-IE-8Zv"/>
+                                    <constraint firstItem="MRn-fb-7zN" firstAttribute="leading" secondItem="uhQ-g0-FdL" secondAttribute="leadingMargin" id="flv-7J-z3W"/>
+                                    <constraint firstAttribute="bottom" secondItem="MRn-fb-7zN" secondAttribute="bottom" id="qBw-rK-Cb9"/>
+                                    <constraint firstItem="MRn-fb-7zN" firstAttribute="trailing" secondItem="uhQ-g0-FdL" secondAttribute="trailingMargin" id="zbs-1I-p1F"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="2500"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="0.0" width="320" height="420"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cuv-Zx-2wu" firstAttribute="trailing" secondItem="Ce9-TQ-fTe" secondAttribute="trailing" constant="16" id="2Rz-99-ROW"/>
+                            <constraint firstItem="5rq-xl-U4C" firstAttribute="trailing" secondItem="Cuv-Zx-2wu" secondAttribute="trailing" id="7v4-a2-Y4j"/>
+                            <constraint firstItem="5rq-xl-U4C" firstAttribute="top" secondItem="A9B-1A-rTN" secondAttribute="top" id="A0h-tP-U4a"/>
+                            <constraint firstItem="IlD-YI-hqm" firstAttribute="top" secondItem="A9B-1A-rTN" secondAttribute="top" constant="18" id="Ili-Fp-jmU"/>
+                            <constraint firstItem="uhQ-g0-FdL" firstAttribute="leading" secondItem="5rq-xl-U4C" secondAttribute="leading" id="JPp-Mb-UkE"/>
+                            <constraint firstItem="uhQ-g0-FdL" firstAttribute="top" secondItem="5rq-xl-U4C" secondAttribute="bottom" constant="8" symbolic="YES" id="T4k-v0-WP4"/>
+                            <constraint firstItem="uhQ-g0-FdL" firstAttribute="trailing" secondItem="5rq-xl-U4C" secondAttribute="trailing" id="TLO-iS-eoy"/>
+                            <constraint firstItem="Ce9-TQ-fTe" firstAttribute="leading" secondItem="IlD-YI-hqm" secondAttribute="trailing" constant="8" id="Y3z-0g-COd"/>
+                            <constraint firstItem="Ce9-TQ-fTe" firstAttribute="leading" secondItem="IlD-YI-hqm" secondAttribute="trailing" constant="8" id="Y4l-5Y-lfZ"/>
+                            <constraint firstItem="Ce9-TQ-fTe" firstAttribute="leading" secondItem="IlD-YI-hqm" secondAttribute="trailing" constant="8" id="gxD-pZ-9QJ"/>
+                            <constraint firstItem="Cuv-Zx-2wu" firstAttribute="bottom" secondItem="uhQ-g0-FdL" secondAttribute="bottom" constant="16" id="mR1-Rk-w8S"/>
+                            <constraint firstItem="Ce9-TQ-fTe" firstAttribute="top" secondItem="Cuv-Zx-2wu" secondAttribute="top" constant="9" id="moX-Qs-nzr"/>
+                            <constraint firstItem="IlD-YI-hqm" firstAttribute="leading" secondItem="Cuv-Zx-2wu" secondAttribute="leading" constant="15" id="qXX-Qn-dH1"/>
+                            <constraint firstItem="5rq-xl-U4C" firstAttribute="leading" secondItem="Cuv-Zx-2wu" secondAttribute="leading" id="rEQ-N8-Ffs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cuv-Zx-2wu"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="2500"/>
+                    <connections>
+                        <outlet property="attributedLabel" destination="MRn-fb-7zN" id="ICE-Nk-f8z"/>
+                        <outlet property="scroller" destination="uhQ-g0-FdL" id="hAt-ff-hkj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfB-6j-xdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.75" y="271.47887323943661"/>
+        </scene>
         <!--nationalBirdViewController-->
         <scene sceneID="dY8-Ra-cqZ">
             <objects>
@@ -196,23 +292,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peacock-big" translatesAutoresizingMaskIntoConstraints="NO" id="FMZ-yc-2gQ">
-                                <rect key="frame" x="0.0" y="90" width="320" height="213"/>
+                                <rect key="frame" x="0.0" y="70" width="320" height="213"/>
                                 <color key="tintColor" red="0.0" green="0.65490196079999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="213" id="q1q-lm-EdR"/>
                                     <constraint firstAttribute="width" constant="320" id="vPk-W8-bOZ"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Huh-mX-yCL">
+                                <rect key="frame" x="6" y="291" width="306" height="269"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">In 1963, the peacock was declared the National Bird of India because of its rich religious and legendary involvement in Indian traditions. The Indian peafowl or blue peafowl (Pavo cristatus), a large and brightly coloured bird, is a species of peafowl native to South Asia, but introduced in many other parts of the world.
+
+The male, or peacock, is predominantly blue with a fan-like crest of spatula-tipped wire-like feathers and is best known for the long train made up of elongated upper-tail covert feathers which bear colourful eyespots. These stiff feathers are raised into a fan and quivered in a display during courtship. Despite the length and size of these covert feathers, peacocks are still capable of flight. Peahens lack the train, and have a greenish lower neck and duller brown plumage. The Indian peafowl lives mainly on the ground in open forest or on land under cultivation where they forage for berries, grains but also prey on snakes, lizards, and small rodents. Their loud calls make them easy to detect, and in forest areas often indicate the presence of a predator such as a tiger. They forage on the ground in small groups and usually try to escape on foot through undergrowth and avoid flying, though they fly into tall trees to roost.           \n                                                  CULTURE                                \n                                   Prominent in many cultures, the peacock has been used in numerous iconic representations, including being designated the national bird of India in 1963. The peacock, known as mayura in Sanskrit, has enjoyed a fabled place in India since and is frequently depicted in temple art, mythology, poetry, folk music and traditions. A Sanskrit derivation of mayura is from the root mi for kill and said to mean "killer of snakes". Many Hindu deities are associated with the bird, Krishna is often depicted with a feather in his headband, while worshippers of Shiva associate the bird as the steed of the God of war, Kartikeya (also known as Skanda or Murugan). A story in the Uttara Ramayana describes the head of the Devas, Indra, who unable to defeat Ravana, sheltered under the wing of peacock and later blessed it with a "thousand eyes" and fearlessness from serpents. Another story has Indra who after being cursed with a thousand ulcers was transformed into a peacock with a thousand eyes. In Buddhist philosophy, the peacock represents wisdom. Peacock feathers are used in many rituals and ornamentation. Peacock motifs are widespread in Indian temple architecture, old coinage, textiles and continue to be used in many modern items of art and utility. A folk belief found in many parts of India is that the peacock does not copulate with the peahen but that she is impregnated by other means. The stories vary and include the idea that the peacock looks at its ugly feet and cries whereupon the tears are fed on by the peahen causing it to be orally impregnated while other variants incorporate sperm transfer from beak to beak. Similar ideas have also been ascribed to Indian crow species. In Greek mythology the origin of the peacocks plumage is explained in the tale of Hera and Argus. The main figure of the Yazidi religion Yezidism, Melek Taus, is most commonly depicted as a peacock. Peacock motifs are widely used even today such as in the logos of the US NBC and the PTV television networks and the Sri Lankan Airlines.
+These birds were often kept in menageries and as ornaments in large gardens and estates. In medieval times, knights in Europe took a "Vow of the Peacock" and decorated their helmets with its plumes. Feathers were buried with Viking warriors and the flesh of the bird was said to cure snake venom and many other maladies. Numerous uses in Ayurveda have been documented. Peafowl were said to keep an area free of snakes. In 1526, the legal issue as to whether peacocks were wild or domestic fowl was thought sufficiently important for Cardinal Wolsey to summon all the English judges to give their opinion, which was that they are domestic fowl.
+In Anglo-Indian usage of the 1850s, to peacock meant making visits to ladies and gentlemen in the morning. In the 1890s, the term "peacocking" in Australia referred to the practice of buying up the best pieces of land ("picking the eyes") so as to render the surrounding lands valueless. The English word "peacock" has come to be used to describe a man who is very proud or gives a lot of attention to his clothing.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FMZ-yc-2gQ" firstAttribute="top" secondItem="MQ4-0P-ydT" secondAttribute="bottom" constant="20" id="7gq-09-lmg"/>
+                            <constraint firstItem="FMZ-yc-2gQ" firstAttribute="top" secondItem="MQ4-0P-ydT" secondAttribute="bottom" id="7gq-09-lmg"/>
+                            <constraint firstItem="tHz-uq-ck8" firstAttribute="trailing" secondItem="Huh-mX-yCL" secondAttribute="trailing" constant="8" id="7wX-au-lJI"/>
                             <constraint firstItem="tHz-uq-ck8" firstAttribute="trailing" secondItem="w0P-8m-ke3" secondAttribute="trailing" constant="16" id="9Hx-EW-GUP"/>
                             <constraint firstItem="MQ4-0P-ydT" firstAttribute="leading" secondItem="tHz-uq-ck8" secondAttribute="leading" id="JzX-d8-Diq"/>
                             <constraint firstItem="m0d-LP-ICw" firstAttribute="leading" secondItem="tHz-uq-ck8" secondAttribute="leading" constant="15" id="LLx-7b-SHh"/>
+                            <constraint firstItem="tHz-uq-ck8" firstAttribute="bottom" secondItem="Huh-mX-yCL" secondAttribute="bottom" constant="8" id="Q2E-zp-LPu"/>
+                            <constraint firstItem="Huh-mX-yCL" firstAttribute="top" secondItem="FMZ-yc-2gQ" secondAttribute="bottom" constant="8" id="QEn-t2-xZT"/>
                             <constraint firstItem="FMZ-yc-2gQ" firstAttribute="centerX" secondItem="Atp-w3-Drn" secondAttribute="centerX" id="Wvk-Kh-pWy"/>
                             <constraint firstItem="m0d-LP-ICw" firstAttribute="top" secondItem="Atp-w3-Drn" secondAttribute="top" constant="18" id="dxC-Oz-aed"/>
                             <constraint firstItem="w0P-8m-ke3" firstAttribute="leading" secondItem="m0d-LP-ICw" secondAttribute="trailing" constant="8" id="f2Q-Yr-ECY"/>
+                            <constraint firstItem="Huh-mX-yCL" firstAttribute="leading" secondItem="tHz-uq-ck8" secondAttribute="leading" constant="6" id="hBe-PH-cni"/>
                             <constraint firstItem="w0P-8m-ke3" firstAttribute="leading" secondItem="m0d-LP-ICw" secondAttribute="trailing" constant="8" id="mpO-LC-AI5"/>
                             <constraint firstItem="w0P-8m-ke3" firstAttribute="top" secondItem="tHz-uq-ck8" secondAttribute="top" constant="9" id="q3M-cI-btV"/>
                             <constraint firstItem="MQ4-0P-ydT" firstAttribute="trailing" secondItem="tHz-uq-ck8" secondAttribute="trailing" id="vGS-O0-flQ"/>
@@ -223,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riy-xE-8r0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965.60000000000002" y="990.85457271364328"/>
+            <point key="canvasLocation" x="963.75" y="990.84507042253517"/>
         </scene>
         <!--cultureViewController-->
         <scene sceneID="RWd-EC-AUt">
@@ -266,8 +377,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="8o1-kR-w49"/>
                                 </constraints>
-                                <mutableString key="text">The culture of India refers collectively to the thousands of distinct and unique cultures of all religions and communities present in India. India's languages, religions, dance, music, architecture, food, and customs differs from place to place within the country. The Indian culture, often labeled as an amalgamation of several cultures, spans across the Indian subcontinent and has been influenced by a history that is several millennia old.
-Many elements of India's diverse cultures, such as Indian religions, Indian philosophy and Indian cuisine, have a profound impact across the world.</mutableString>
+                                <string key="text">The culture of India refers collectively to the thousands of distinct and unique cultures of all religions and communities present in India. India's languages, religions, dance, music, architecture, food, and customs differs from place to place within the country. The Indian culture, often labeled as an amalgamation of several cultures, spans across the Indian subcontinent and has been influenced by a history that is several millennia old.
+Many elements of India's diverse cultures, such as Indian religions, Indian philosophy and Indian cuisine, have a profound impact across the world.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -324,16 +435,21 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4Na-yE-sYo" firstAttribute="width" secondItem="bSt-q0-MtA" secondAttribute="width" id="7NM-P2-5dn"/>
                             <constraint firstItem="bSt-q0-MtA" firstAttribute="leading" secondItem="RYm-m4-nCd" secondAttribute="leading" constant="6" id="7XN-a8-isz"/>
                             <constraint firstItem="3nL-8b-ptp" firstAttribute="bottom" secondItem="HdG-9R-4f8" secondAttribute="bottom" id="7zY-re-5aO"/>
                             <constraint firstItem="3p0-xM-OUu" firstAttribute="trailing" secondItem="RYm-m4-nCd" secondAttribute="trailing" id="98g-M5-l8S"/>
                             <constraint firstItem="ykH-CO-J7H" firstAttribute="trailing" secondItem="HdG-9R-4f8" secondAttribute="trailing" id="B17-YO-Y0o"/>
+                            <constraint firstItem="ykH-CO-J7H" firstAttribute="height" secondItem="bSt-q0-MtA" secondAttribute="height" id="BYs-3o-Ekj"/>
                             <constraint firstItem="7br-vw-Vj8" firstAttribute="bottom" secondItem="4Na-yE-sYo" secondAttribute="bottom" id="CyZ-BU-NVu"/>
                             <constraint firstItem="RYm-m4-nCd" firstAttribute="trailing" secondItem="sD0-fP-6NL" secondAttribute="trailing" constant="16" id="FBj-c7-L1g"/>
                             <constraint firstItem="3p0-xM-OUu" firstAttribute="leading" secondItem="RYm-m4-nCd" secondAttribute="leading" id="HKJ-U1-KEm"/>
                             <constraint firstItem="bSt-q0-MtA" firstAttribute="top" secondItem="ykH-CO-J7H" secondAttribute="top" id="HOi-fe-wP9"/>
+                            <constraint firstItem="7br-vw-Vj8" firstAttribute="height" secondItem="bSt-q0-MtA" secondAttribute="height" id="HQi-Un-hfi"/>
+                            <constraint firstItem="3nL-8b-ptp" firstAttribute="height" secondItem="bSt-q0-MtA" secondAttribute="height" id="KYa-gz-bdl"/>
                             <constraint firstItem="DNW-3U-wzg" firstAttribute="leading" secondItem="RYm-m4-nCd" secondAttribute="leading" constant="15" id="LEi-Av-FgX"/>
                             <constraint firstItem="sD0-fP-6NL" firstAttribute="centerX" secondItem="XEj-w9-9Ve" secondAttribute="centerX" id="LYd-kM-Bkq"/>
+                            <constraint firstItem="HdG-9R-4f8" firstAttribute="width" secondItem="bSt-q0-MtA" secondAttribute="width" id="Mby-ol-NOg"/>
                             <constraint firstItem="7br-vw-Vj8" firstAttribute="top" secondItem="4Na-yE-sYo" secondAttribute="top" id="P35-NL-XfC"/>
                             <constraint firstItem="bSt-q0-MtA" firstAttribute="leading" secondItem="3nL-8b-ptp" secondAttribute="leading" id="RhJ-zM-Gqr"/>
                             <constraint firstItem="ykH-CO-J7H" firstAttribute="leading" secondItem="HdG-9R-4f8" secondAttribute="leading" id="SBL-IN-ouW"/>
@@ -344,6 +460,7 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                             <constraint firstItem="4Na-yE-sYo" firstAttribute="leading" secondItem="7br-vw-Vj8" secondAttribute="trailing" constant="8" symbolic="YES" id="W8V-7d-LDI"/>
                             <constraint firstItem="RYm-m4-nCd" firstAttribute="bottom" secondItem="3nL-8b-ptp" secondAttribute="bottom" constant="35" id="X4H-XY-pRV"/>
                             <constraint firstItem="RYm-m4-nCd" firstAttribute="trailing" secondItem="ykH-CO-J7H" secondAttribute="trailing" constant="6" id="bIv-DN-1Hz"/>
+                            <constraint firstItem="ykH-CO-J7H" firstAttribute="width" secondItem="bSt-q0-MtA" secondAttribute="width" id="bR1-ui-Egt"/>
                             <constraint firstItem="RYm-m4-nCd" firstAttribute="trailing" secondItem="4Na-yE-sYo" secondAttribute="trailing" constant="5" id="bS5-yi-oL4"/>
                             <constraint firstItem="ykH-CO-J7H" firstAttribute="leading" secondItem="bSt-q0-MtA" secondAttribute="trailing" constant="8" symbolic="YES" id="blV-qb-4g0"/>
                             <constraint firstItem="7br-vw-Vj8" firstAttribute="leading" secondItem="RYm-m4-nCd" secondAttribute="leading" constant="7" id="bqD-Um-L5h"/>
@@ -351,11 +468,15 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                             <constraint firstItem="HdG-9R-4f8" firstAttribute="leading" secondItem="3nL-8b-ptp" secondAttribute="trailing" constant="8" symbolic="YES" id="cYw-Rk-2oF"/>
                             <constraint firstItem="mea-VX-bFs" firstAttribute="leading" secondItem="DNW-3U-wzg" secondAttribute="trailing" constant="8" id="dbI-hJ-aqJ"/>
                             <constraint firstItem="bSt-q0-MtA" firstAttribute="bottom" secondItem="ykH-CO-J7H" secondAttribute="bottom" id="eu6-5F-n3T"/>
+                            <constraint firstItem="4Na-yE-sYo" firstAttribute="height" secondItem="bSt-q0-MtA" secondAttribute="height" id="gsl-a2-Ior"/>
                             <constraint firstItem="sD0-fP-6NL" firstAttribute="top" secondItem="3p0-xM-OUu" secondAttribute="bottom" constant="8" id="hO3-cx-CfT"/>
                             <constraint firstItem="DNW-3U-wzg" firstAttribute="top" secondItem="XEj-w9-9Ve" secondAttribute="top" constant="18" id="jwl-sY-Xnx"/>
                             <constraint firstItem="3nL-8b-ptp" firstAttribute="top" secondItem="7br-vw-Vj8" secondAttribute="bottom" constant="18" id="mOs-rA-klY"/>
                             <constraint firstItem="mea-VX-bFs" firstAttribute="top" secondItem="RYm-m4-nCd" secondAttribute="top" constant="9" id="nxv-Gb-qgU"/>
                             <constraint firstItem="sD0-fP-6NL" firstAttribute="leading" secondItem="RYm-m4-nCd" secondAttribute="leading" constant="16" id="pn1-Dh-De0"/>
+                            <constraint firstItem="7br-vw-Vj8" firstAttribute="width" secondItem="bSt-q0-MtA" secondAttribute="width" id="uQb-Vf-3Kb"/>
+                            <constraint firstItem="3nL-8b-ptp" firstAttribute="width" secondItem="bSt-q0-MtA" secondAttribute="width" id="vxV-CQ-VRk"/>
+                            <constraint firstItem="HdG-9R-4f8" firstAttribute="height" secondItem="bSt-q0-MtA" secondAttribute="height" id="wsc-cP-nWk"/>
                             <constraint firstItem="bSt-q0-MtA" firstAttribute="top" secondItem="sD0-fP-6NL" secondAttribute="bottom" constant="8" symbolic="YES" id="ywn-fH-kZA"/>
                             <constraint firstItem="7br-vw-Vj8" firstAttribute="top" secondItem="bSt-q0-MtA" secondAttribute="bottom" constant="17" id="zZ4-jY-uV1"/>
                         </constraints>
@@ -365,6 +486,63 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPH-Kf-Sn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="963.75" y="1661.6197183098591"/>
+        </scene>
+        <!--vegeterianRecipiesVC-->
+        <scene sceneID="Tor-6a-ddp">
+            <objects>
+                <viewController storyboardIdentifier="vegeterianRecipiesVC" title="vegeterianRecipiesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HSi-3F-kNM" customClass="vegeterianRecipiesViewController" customModule="Hindustan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aad-3I-IyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KlC-TQ-dzo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.2784313725" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DfI-Dk-Va3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFj-ro-UGo">
+                                <rect key="frame" x="15" y="18" width="21" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="4uc-u2-WHZ"/>
+                                    <constraint firstAttribute="width" constant="21" id="Y4r-cV-jPO"/>
+                                </constraints>
+                                <state key="normal" image="head_back_btn"/>
+                                <connections>
+                                    <action selector="backBtnTap" destination="HSi-3F-kNM" eventType="touchUpInside" id="i6w-Pf-yNz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEGETERIAN RECIPES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-qP-Ydo">
+                                <rect key="frame" x="44" y="29" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wAQ-oz-qRG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfJ-qP-Ydo" firstAttribute="leading" secondItem="jFj-ro-UGo" secondAttribute="trailing" constant="8" id="GrN-RG-Nmv"/>
+                            <constraint firstItem="bfJ-qP-Ydo" firstAttribute="leading" secondItem="jFj-ro-UGo" secondAttribute="trailing" constant="8" id="HLS-fQ-z4A"/>
+                            <constraint firstItem="KlC-TQ-dzo" firstAttribute="leading" secondItem="AY1-D4-HzN" secondAttribute="leading" id="Ki5-za-fJu"/>
+                            <constraint firstItem="bfJ-qP-Ydo" firstAttribute="top" secondItem="AY1-D4-HzN" secondAttribute="top" constant="9" id="OrH-B5-cMK"/>
+                            <constraint firstItem="bfJ-qP-Ydo" firstAttribute="leading" secondItem="jFj-ro-UGo" secondAttribute="trailing" constant="8" id="VTR-WX-g9i"/>
+                            <constraint firstItem="AY1-D4-HzN" firstAttribute="trailing" secondItem="bfJ-qP-Ydo" secondAttribute="trailing" constant="16" id="eFR-WT-2GF"/>
+                            <constraint firstItem="jFj-ro-UGo" firstAttribute="leading" secondItem="AY1-D4-HzN" secondAttribute="leading" constant="15" id="jTb-Hy-RfL"/>
+                            <constraint firstItem="jFj-ro-UGo" firstAttribute="top" secondItem="Aad-3I-IyZ" secondAttribute="top" constant="18" id="oOp-au-oHa"/>
+                            <constraint firstItem="KlC-TQ-dzo" firstAttribute="top" secondItem="Aad-3I-IyZ" secondAttribute="top" id="pOC-Nx-s6T"/>
+                            <constraint firstItem="KlC-TQ-dzo" firstAttribute="trailing" secondItem="AY1-D4-HzN" secondAttribute="trailing" id="vcE-fK-72q"/>
+                            <constraint firstItem="bfJ-qP-Ydo" firstAttribute="leading" secondItem="jFj-ro-UGo" secondAttribute="trailing" constant="8" id="xAZ-0i-ZIU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AY1-D4-HzN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPA-KS-KgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.75" y="2339.7887323943664"/>
         </scene>
         <!--nationalFlagViewController-->
         <scene sceneID="tVF-ir-G2Z">
@@ -401,13 +579,6 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64X-hY-T10">
-                                <rect key="frame" x="0.0" y="78" width="320" height="490"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="LEu-1d-m3L" id="k9B-Uf-7id"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -417,19 +588,12 @@ Many elements of India's diverse cultures, such as Indian religions, Indian ph
                             <constraint firstItem="Q3a-lv-sq8" firstAttribute="leading" secondItem="gMF-HM-dGQ" secondAttribute="leading" id="QG7-BJ-EEs"/>
                             <constraint firstItem="WNd-sA-sF3" firstAttribute="top" secondItem="gMF-HM-dGQ" secondAttribute="top" constant="9" id="ROG-b6-1nQ"/>
                             <constraint firstItem="6iZ-RN-CRU" firstAttribute="top" secondItem="JjA-o2-oap" secondAttribute="top" constant="18" id="Rml-Y2-TiJ"/>
-                            <constraint firstItem="64X-hY-T10" firstAttribute="leading" secondItem="gMF-HM-dGQ" secondAttribute="leading" id="RtZ-cE-85I"/>
-                            <constraint firstItem="64X-hY-T10" firstAttribute="top" secondItem="Q3a-lv-sq8" secondAttribute="bottom" constant="8" id="ag2-iA-WAa"/>
                             <constraint firstItem="Q3a-lv-sq8" firstAttribute="trailing" secondItem="gMF-HM-dGQ" secondAttribute="trailing" id="gbr-im-9hK"/>
-                            <constraint firstItem="64X-hY-T10" firstAttribute="bottom" secondItem="gMF-HM-dGQ" secondAttribute="bottom" id="ieB-wh-aWR"/>
                             <constraint firstItem="6iZ-RN-CRU" firstAttribute="leading" secondItem="gMF-HM-dGQ" secondAttribute="leading" constant="15" id="lin-gd-eCM"/>
-                            <constraint firstItem="64X-hY-T10" firstAttribute="trailing" secondItem="gMF-HM-dGQ" secondAttribute="trailing" id="mGo-g8-XYq"/>
                             <constraint firstItem="WNd-sA-sF3" firstAttribute="leading" secondItem="6iZ-RN-CRU" secondAttribute="trailing" constant="8" id="z9B-XX-BTX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gMF-HM-dGQ"/>
                     </view>
-                    <connections>
-                        <outlet property="flagWebView" destination="64X-hY-T10" id="GUK-2H-ijX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bX-Zp-Iys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
