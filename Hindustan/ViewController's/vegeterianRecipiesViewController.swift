@@ -2,8 +2,8 @@
 //  vegeterianRecipiesViewController.swift
 //  Hindustan
 //
-//  Created by Taniya C on 5/20/18.
-//  Copyright © 2018 TaniyaC. All rights reserved.
+//  Created by Shubham C on 5/20/18.
+//  Copyright © 2018 Shubham C. All rights reserved.
 //
 
 import UIKit

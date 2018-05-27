@@ -2,8 +2,8 @@
 //  nationalAnimalViewMoreInfoViewController.swift
 //  Hindustan
 //
-//  Created by Taniya C on 5/16/18.
-//  Copyright © 2018 TaniyaC. All rights reserved.
+//  Created by Shubham C on 5/16/18.
+//  Copyright © 2018 Shubham C. All rights reserved.
 //
 
 import UIKit
@@ -46,8 +46,6 @@ class nationalAnimalViewMoreInfoViewController: UIViewController {
         attributedString.addAttributes(secondAttributes, range: NSRange(location: 493, length: 522))
         attributedString.addAttributes(thirdAttributes, range: NSRange(location: 1004, length: 207))
         
-        
-        
         // 4
         attributedLabel.attributedText = attributedString
 //        attributedLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -63,7 +61,17 @@ class nationalAnimalViewMoreInfoViewController: UIViewController {
     }
 }
 
-
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text:String) -> NSMutableAttributedString {
+        let attrs:[NSAttributedStringKey:AnyObject] = [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): UIFont(name: "AvenirNext-Medium", size: 12)!]
+        let boldString = NSMutableAttributedString(string: text, attributes:attrs)
+        self.append(boldString)
+        return self
+    }
     
-
-
+    @discardableResult func normal(_ text:String)->NSMutableAttributedString {
+        let normal =  NSAttributedString(string: text)
+        self.append(normal)
+        return self
+    }
+}

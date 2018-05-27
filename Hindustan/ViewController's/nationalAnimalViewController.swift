@@ -21,8 +21,6 @@ class nationalAnimalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     @IBAction func shakeButtonPressed(_ sender: UIButton) {
         sender.shake()
         

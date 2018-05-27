@@ -51,6 +51,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
             
             self.present(vegeterianRecipiesVC, animated: true, completion: nil)
         }
+        else if indexPath.row == 6 {
+            let nonVegeterianRecipiesVC:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "nonVegeterianViewController") as UIViewController
+            
+            self.present(nonVegeterianRecipiesVC, animated: true, completion: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

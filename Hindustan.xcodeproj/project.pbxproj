@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		22024D9620AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22024D9520AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift */; };
+		224B2BEA20BACD6200D9006A /* aboutCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BE920BACD6200D9006A /* aboutCultureViewController.swift */; };
+		224B2BED20BACFD400D9006A /* cultureInfo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 224B2BEB20BACFD300D9006A /* cultureInfo.pdf */; };
+		224B2BEE20BACFD400D9006A /* 300_Chicken_Recipes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 224B2BEC20BACFD400D9006A /* 300_Chicken_Recipes.pdf */; };
+		224B2BF020BAD20700D9006A /* philosophyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BEF20BAD20700D9006A /* philosophyViewController.swift */; };
+		224B2BF220BAD58700D9006A /* festivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BF120BAD58700D9006A /* festivalViewController.swift */; };
+		224B2BF620BADE0200D9006A /* festival.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 224B2BF520BADE0200D9006A /* festival.pdf */; };
+		224B2BF820BAE04900D9006A /* greetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BF720BAE04900D9006A /* greetingsViewController.swift */; };
+		224B2BFA20BAE44300D9006A /* performingArtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BF920BAE44300D9006A /* performingArtsViewController.swift */; };
+		224B2BFC20BAE46400D9006A /* languagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BFB20BAE46400D9006A /* languagesViewController.swift */; };
+		224B2BFE20BAF56C00D9006A /* theatreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BFD20BAF56B00D9006A /* theatreViewController.swift */; };
+		224B2C0020BAF58200D9006A /* cinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2BFF20BAF58200D9006A /* cinemaViewController.swift */; };
+		224B2C0220BAF59D00D9006A /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2C0120BAF59D00D9006A /* musicViewController.swift */; };
+		224B2C0420BAFB6300D9006A /* languageOfficialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2C0320BAFB6300D9006A /* languageOfficialViewController.swift */; };
+		224B2C0620BAFB7C00D9006A /* languageRegionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2C0520BAFB7C00D9006A /* languageRegionalViewController.swift */; };
+		224B2C0920BB048B00D9006A /* languages.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 224B2C0720BB048A00D9006A /* languages.pdf */; };
+		224B2C0A20BB048B00D9006A /* IndianRecipes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 224B2C0820BB048B00D9006A /* IndianRecipes.pdf */; };
+		224B2C0C20BB17FF00D9006A /* nonVegeterianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B2C0B20BB17FF00D9006A /* nonVegeterianViewController.swift */; };
 		2287C46120B18606007C945B /* vegeterianRecipiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */; };
 		22D54FC42095D522008CB31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FC32095D522008CB31E /* AppDelegate.swift */; };
 		22D54FC62095D522008CB31E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FC52095D522008CB31E /* ViewController.swift */; };
@@ -19,11 +36,27 @@
 		22D54FDC2099EC97008CB31E /* nationalAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDB2099EC97008CB31E /* nationalAnimalViewController.swift */; };
 		22D54FDE2099ECAD008CB31E /* nationalBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */; };
 		22D54FE0209C6D78008CB31E /* cultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D54FDF209C6D77008CB31E /* cultureViewController.swift */; };
-		635906D420B19166006670E3 /* IndianRecipes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 635906D320B19166006670E3 /* IndianRecipes.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22024D9520AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalAnimalViewMoreInfoViewController.swift; path = "ViewController's/nationalAnimalViewMoreInfoViewController.swift"; sourceTree = "<group>"; };
+		224B2BE920BACD6200D9006A /* aboutCultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = aboutCultureViewController.swift; path = "ViewController's/aboutCultureViewController.swift"; sourceTree = "<group>"; };
+		224B2BEB20BACFD300D9006A /* cultureInfo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cultureInfo.pdf; sourceTree = "<group>"; };
+		224B2BEC20BACFD400D9006A /* 300_Chicken_Recipes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 300_Chicken_Recipes.pdf; sourceTree = "<group>"; };
+		224B2BEF20BAD20700D9006A /* philosophyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = philosophyViewController.swift; path = "ViewController's/philosophyViewController.swift"; sourceTree = "<group>"; };
+		224B2BF120BAD58700D9006A /* festivalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = festivalViewController.swift; path = "ViewController's/festivalViewController.swift"; sourceTree = "<group>"; };
+		224B2BF520BADE0200D9006A /* festival.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = festival.pdf; sourceTree = "<group>"; };
+		224B2BF720BAE04900D9006A /* greetingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = greetingsViewController.swift; path = "ViewController's/greetingsViewController.swift"; sourceTree = "<group>"; };
+		224B2BF920BAE44300D9006A /* performingArtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = performingArtsViewController.swift; path = "ViewController's/performingArtsViewController.swift"; sourceTree = "<group>"; };
+		224B2BFB20BAE46400D9006A /* languagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = languagesViewController.swift; path = "ViewController's/languagesViewController.swift"; sourceTree = "<group>"; };
+		224B2BFD20BAF56B00D9006A /* theatreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = theatreViewController.swift; path = "ViewController's/theatreViewController.swift"; sourceTree = "<group>"; };
+		224B2BFF20BAF58200D9006A /* cinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = cinemaViewController.swift; path = "ViewController's/cinemaViewController.swift"; sourceTree = "<group>"; };
+		224B2C0120BAF59D00D9006A /* musicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = musicViewController.swift; path = "ViewController's/musicViewController.swift"; sourceTree = "<group>"; };
+		224B2C0320BAFB6300D9006A /* languageOfficialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = languageOfficialViewController.swift; path = "ViewController's/languageOfficialViewController.swift"; sourceTree = "<group>"; };
+		224B2C0520BAFB7C00D9006A /* languageRegionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = languageRegionalViewController.swift; path = "ViewController's/languageRegionalViewController.swift"; sourceTree = "<group>"; };
+		224B2C0720BB048A00D9006A /* languages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = languages.pdf; sourceTree = "<group>"; };
+		224B2C0820BB048B00D9006A /* IndianRecipes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IndianRecipes.pdf; sourceTree = "<group>"; };
+		224B2C0B20BB17FF00D9006A /* nonVegeterianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nonVegeterianViewController.swift; path = "ViewController's/nonVegeterianViewController.swift"; sourceTree = "<group>"; };
 		2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vegeterianRecipiesViewController.swift; path = "ViewController's/vegeterianRecipiesViewController.swift"; sourceTree = "<group>"; };
 		22D54FC02095D522008CB31E /* Hindustan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hindustan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D54FC32095D522008CB31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +70,6 @@
 		22D54FDB2099EC97008CB31E /* nationalAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalAnimalViewController.swift; path = "ViewController's/nationalAnimalViewController.swift"; sourceTree = "<group>"; };
 		22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nationalBirdViewController.swift; path = "ViewController's/nationalBirdViewController.swift"; sourceTree = "<group>"; };
 		22D54FDF209C6D77008CB31E /* cultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = cultureViewController.swift; path = "ViewController's/cultureViewController.swift"; sourceTree = "<group>"; };
-		635906D320B19166006670E3 /* IndianRecipes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = IndianRecipes.pdf; path = ../../../Desktop/IndianRecipes.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +102,11 @@
 		22D54FC22095D522008CB31E /* Hindustan */ = {
 			isa = PBXGroup;
 			children = (
-				635906D320B19166006670E3 /* IndianRecipes.pdf */,
+				224B2BEC20BACFD400D9006A /* 300_Chicken_Recipes.pdf */,
+				224B2BEB20BACFD300D9006A /* cultureInfo.pdf */,
+				224B2BF520BADE0200D9006A /* festival.pdf */,
+				224B2C0820BB048B00D9006A /* IndianRecipes.pdf */,
+				224B2C0720BB048A00D9006A /* languages.pdf */,
 				22D54FC32095D522008CB31E /* AppDelegate.swift */,
 				22D54FC52095D522008CB31E /* ViewController.swift */,
 				22D54FD72099C828008CB31E /* nationalEmblemViewController.swift */,
@@ -80,6 +116,18 @@
 				2287C46020B18606007C945B /* vegeterianRecipiesViewController.swift */,
 				22D54FDD2099ECAD008CB31E /* nationalBirdViewController.swift */,
 				22D54FDF209C6D77008CB31E /* cultureViewController.swift */,
+				224B2BE920BACD6200D9006A /* aboutCultureViewController.swift */,
+				224B2BEF20BAD20700D9006A /* philosophyViewController.swift */,
+				224B2BF120BAD58700D9006A /* festivalViewController.swift */,
+				224B2BF720BAE04900D9006A /* greetingsViewController.swift */,
+				224B2BF920BAE44300D9006A /* performingArtsViewController.swift */,
+				224B2BFD20BAF56B00D9006A /* theatreViewController.swift */,
+				224B2BFF20BAF58200D9006A /* cinemaViewController.swift */,
+				224B2C0120BAF59D00D9006A /* musicViewController.swift */,
+				224B2BFB20BAE46400D9006A /* languagesViewController.swift */,
+				224B2C0320BAFB6300D9006A /* languageOfficialViewController.swift */,
+				224B2C0520BAFB7C00D9006A /* languageRegionalViewController.swift */,
+				224B2C0B20BB17FF00D9006A /* nonVegeterianViewController.swift */,
 				22D54FC72095D522008CB31E /* Main.storyboard */,
 				22D54FCA2095D522008CB31E /* Assets.xcassets */,
 				22D54FCC2095D522008CB31E /* LaunchScreen.storyboard */,
@@ -148,9 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D54FCE2095D522008CB31E /* LaunchScreen.storyboard in Resources */,
+				224B2BEE20BACFD400D9006A /* 300_Chicken_Recipes.pdf in Resources */,
 				22D54FCB2095D522008CB31E /* Assets.xcassets in Resources */,
+				224B2C0920BB048B00D9006A /* languages.pdf in Resources */,
+				224B2BF620BADE0200D9006A /* festival.pdf in Resources */,
 				22D54FC92095D522008CB31E /* Main.storyboard in Resources */,
-				635906D420B19166006670E3 /* IndianRecipes.pdf in Resources */,
+				224B2C0A20BB048B00D9006A /* IndianRecipes.pdf in Resources */,
+				224B2BED20BACFD400D9006A /* cultureInfo.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,15 +213,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224B2BF220BAD58700D9006A /* festivalViewController.swift in Sources */,
 				2287C46120B18606007C945B /* vegeterianRecipiesViewController.swift in Sources */,
+				224B2BFE20BAF56C00D9006A /* theatreViewController.swift in Sources */,
 				22D54FDE2099ECAD008CB31E /* nationalBirdViewController.swift in Sources */,
+				224B2C0020BAF58200D9006A /* cinemaViewController.swift in Sources */,
 				22D54FDA2099D54B008CB31E /* nationalFlagViewController.swift in Sources */,
+				224B2C0C20BB17FF00D9006A /* nonVegeterianViewController.swift in Sources */,
+				224B2BFC20BAE46400D9006A /* languagesViewController.swift in Sources */,
 				22024D9620AC306B00683FD4 /* nationalAnimalViewMoreInfoViewController.swift in Sources */,
 				22D54FDC2099EC97008CB31E /* nationalAnimalViewController.swift in Sources */,
+				224B2C0420BAFB6300D9006A /* languageOfficialViewController.swift in Sources */,
 				22D54FE0209C6D78008CB31E /* cultureViewController.swift in Sources */,
 				22D54FC62095D522008CB31E /* ViewController.swift in Sources */,
 				22D54FC42095D522008CB31E /* AppDelegate.swift in Sources */,
+				224B2BFA20BAE44300D9006A /* performingArtsViewController.swift in Sources */,
+				224B2BF020BAD20700D9006A /* philosophyViewController.swift in Sources */,
+				224B2C0220BAF59D00D9006A /* musicViewController.swift in Sources */,
+				224B2BF820BAE04900D9006A /* greetingsViewController.swift in Sources */,
+				224B2BEA20BACD6200D9006A /* aboutCultureViewController.swift in Sources */,
 				22D54FD82099C828008CB31E /* nationalEmblemViewController.swift in Sources */,
+				224B2C0620BAFB7C00D9006A /* languageRegionalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
